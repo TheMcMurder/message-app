@@ -1,0 +1,17 @@
+{
+  "name": "serverless-message-app",
+  "version": "1.0.0",
+  "description": "A simple serverless nice note message application",
+  "main": "sendMessage.js",
+  "dependencies": {
+    "firebase": "3.8.0",
+    "lodash": "4.17.4",
+    "twilio": "2.11.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Justin McMurdie <mcmurdiej@gmail.com> (http://mcmurdie.net/)",
+  "license": "MIT"
+}
