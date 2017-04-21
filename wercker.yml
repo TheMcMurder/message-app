@@ -1,0 +1,13 @@
+box:
+  id: zhangyuan/serverless-python:latest
+
+build:
+  steps:
+    - npm-install
+
+deploy:
+  steps:
+    - script:
+      name: serverless deploy to env
+      code: |
+        serverless deploy
