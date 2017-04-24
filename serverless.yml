@@ -19,6 +19,7 @@ service: aws-nodejs # NOTE: update this with your service name
 
 provider:
   name: aws
+  region: us-west-2
   runtime: nodejs6.10
 
 functions:
