@@ -3,10 +3,23 @@ box:
 
 build:
   steps:
+    - script:
+      name: Setup Build Environment
+      code: |
+        # Setups the environment values to persist between pipelines
+        # Copy the build scripts to be used in all pipelines
+        mkdir -p $WERCKER_OUTPUT_DIR/scripts/
+        cp -r scripts/* $WERCKER_OUTPUT_DIR/scripts/
+
     - npm-install
 
 deploy:
   steps:
+    - script:
+      name: setup config
+      code: |
+        ./scripts/createConfig
+
     - script:
       name: serverless deploy to env
       code: |

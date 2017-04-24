@@ -1,0 +1,3 @@
+#!/bin/bash
+
+echo "const config = {firebaseUrl: '$FIREBASE_URL', twilioAccountSID: '$TWILIO_ACCOUNT_SID', twilioAuthToken: '$TWILIO_AUTH_TOKEN'}; exports.config = config;" > config.ignored.js
